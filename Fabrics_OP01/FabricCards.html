@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fabrics</title>
+<script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;500&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <style>
         body, html {
@@ -375,6 +377,126 @@ box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ .popup-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.7);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .popup-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .popup-content {
+            background-color: white;
+            border-radius: 12px;
+            width: 90%;
+            max-width: 1000px;
+            max-height: 90vh;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            transform: scale(0.9);
+            transition: transform 0.3s ease;
+        }
+        
+        .popup-overlay.active .popup-content {
+            transform: scale(1);
+        }
+        
+        .iframe-container {
+            position: relative;
+            width: 100%;
+            height: 80vh;
+            overflow: hidden;
+        }
+        
+        .iframe-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        .close-btn {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background-color: #ef4444;
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            z-index: 10;
+            transition: all 0.2s ease;
+        }
+        
+        .close-btn:hover {
+            background-color: #dc2626;
+            transform: rotate(90deg);
+        }
+        
+        .popup-header {
+            padding: 15px 20px;
+            background-color: #333F48;
+            color: white;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+
     </style>
 </head>
 <body>
@@ -435,7 +557,7 @@ box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
 
 
 
-    <a href="https://encrpc.github.io/fabricSub3/Taffata/H_Taffata.html"target="_blank">          
+    <a href="https://encrpc.github.io/Final_SubFabrics3/dtL_/H_Deztek.html"target="_blank">          
 
 
 
@@ -444,6 +566,8 @@ box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
        </a> 
  <div class="fabric-title">D E Z T E K &nbsp; L I G H T</div>
 </div>
+
+<br>
 <div class="fabric-info">
                 <ul>
                     <li>⚪ Named Dez Tek because it (and you) stays cool when it's hot</li>
@@ -451,14 +575,14 @@ box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
                     <li>⚪ Lightweight breathable fabric w/ four way stretch</li>
                     <li>⚪ Amazing for shooter shirts, shorts and 2 ply reversibles</li>
                     <li>⚪ Available in heavier weight version</li>
-			<li> &nbsp;</li><br>
+			<li> &nbsp;</li>
 		
                 </ul>
             </div>
 
  <div class="details">
                 <p>FABRIC COLORS&nbsp;  &nbsp;
-<br><br> </p>
+<br>
 
 </div>
 
@@ -470,7 +594,7 @@ box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
 
  <!-- iiiiiiiii -->
 
-<br><br>
+<div style="height: 10px; "></div>
 
 
  <!-- iiiiiiiii -->
@@ -493,11 +617,11 @@ box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
             </div>
            <div class="details">
                 <p> OPACITY RATING <span style="font-size:12px; color:#2F3C48;">&nbsp;4/5 (Slightly less opaque)</span>  </p>
-                <p class="sub-text">Provides a breathable finish with a slight see-through effect in lighter shades.<br></p><br>
+                <p class="sub-text">Provides a breathable finish with a slight see-through effect in lighter shades.<br></p><div style="height: 5px; "></div>
                 <p> WEIGHT  </p>
                 <p class="sub-text">Comfortable, mid-weight fabric, perfect for athletic wear and lifestyle items..</p>
 
- <p class="sub-text">
+ <p class="sub-text"><br>
 120
  
 GSM - 
@@ -508,7 +632,7 @@ GSM -
 
 
 
-<br>
+<div style="height: 5px; "></div>
                 <p> EMBELLISHMENT TYPES </p>
                 <div class="embellishment-labels">
                  <span class="embellishment-label">Sublimation</span>
@@ -523,7 +647,7 @@ GSM -
 
 <!-- 0000000000000000000 -->
 
-      <div class="show-product-samples" onclick="window.open('https://encrpc.github.io/Sub-Fabric/H_Deztek_hvy.html', '_blank')"><span onclick="window.open('https://encrpc.github.io/Sub-Fabric/H_Deztek.html', '_blank')" 
+      <div class="show-product-samples" onclick="window.open('https://encrpc.github.io/Final_SubFabrics3/dtL_/H_Deztek.html', '_blank')"><span onclick="window.open('https://encrpc.github.io/Final_SubFabrics3/dtL_/H_Deztek.html', '_blank')" 
       style="display: inline-block; background: white; color: #333f48; border: 1px solid #333f48; padding: 8px 10px; font-size: 14px; font-weight:  ; border-radius: 8px; margin-left: 0px; cursor: pointer; transition: background 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out, transform 0.3s ease-in-out;"
       onmouseover="this.style.background='#333f48'; this.style.color='white'; this.style.borderColor='#333f48'; this.style.transform='scale(1)';" 
       onmouseout="this.style.background='white'; this.style.color='#333f48'; this.style.borderColor='#333f48'; this.style.transform='scale(1)';">
@@ -562,7 +686,7 @@ GSM -
      
 
 
-    <a href="https://encrpc.github.io/fabricSub3/Taffata/H_Taffata.html"target="_blank">          
+    <a href="https://encrpc.github.io/Final_SubFabrics3/dtM/H_Deztek_M.html"target="_blank">          
 
 
 
@@ -570,7 +694,7 @@ GSM -
 <img src="dtm2.jpg" alt="Fabric Image" class="image-hover">
        </a> 
  <div class="fabric-title">D E Z T E K &nbsp; M E D I U M</div>
-</div>
+</div><br>
 <div class="fabric-info">
                 <ul>
                     <li>⚪ A mid-weight version of the original DezTek fabric</li>
@@ -578,14 +702,14 @@ GSM -
                     <li>⚪ Lightweight, breathable, and moisture-wicking</li>
                     <li>⚪ Four-way stretch for enhanced mobility and comfort</li>
                     <li>⚪ Durable and ideal for athletic and lifestyle wear</li>
-			<li> &nbsp;</li><br><br>
+			<li> &nbsp;</li>
 		
                 </ul>
             </div>
 
  <div class="details">
                 <p>FABRIC COLORS&nbsp;  &nbsp;
-<br><br> </p>
+<br>
 
 </div>
 
@@ -597,7 +721,7 @@ GSM -
 
  <!-- iiiiiiiii -->
 
-<br><br>
+<div style="height: 10px; "></div>
 
 
  <!-- iiiiiiiii -->
@@ -620,7 +744,7 @@ GSM -
             </div>
            <div class="details">
                 <p> OPACITY RATING <span style="font-size:12px; color:#2F3C48;">&nbsp;4/5 (Slightly less opaque)</span>  </p>
-                <p class="sub-text">Provides a breathable finish with a slight see-through effect in lighter shades.<br></p><br>
+                <p class="sub-text">Provides a breathable finish with a slight see-through effect in lighter shades.<br></p><div style="height: 5px; "></div>
                 <p> WEIGHT  </p>
                 <p class="sub-text">Medium-weight fabric that balances comfort, flexibility, and durability for sports and casual wear.</p>
 
@@ -634,7 +758,8 @@ GSM -
 
 
 
-<br>
+<div style="height: 5px; "></div>
+     
                 <p> EMBELLISHMENT TYPES </p>
                 <div class="embellishment-labels">
                  <span class="embellishment-label">Sublimation</span>
@@ -649,7 +774,7 @@ GSM -
 
 <!-- 0000000000000000000 -->
 
-      <div class="show-product-samples" onclick="return false('q', '_blank')"><span onclick="return false('q', '_blank')" 
+      <div class="show-product-samples" onclick="window.open('https://encrpc.github.io/Final_SubFabrics3/dtM/H_Deztek_M.html', '_blank')"><span onclick="return false('https://encrpc.github.io/Final_SubFabrics3/dtM/H_Deztek_M.html', '_blank')" 
       style="display: inline-block; background: white; color: #333f48; border: 1px solid #333f48; padding: 8px 10px; font-size: 14px; font-weight:  ; border-radius: 8px; margin-left: 0px; cursor: pointer; transition: background 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out, transform 0.3s ease-in-out;"
       onmouseover="this.style.background='#333f48'; this.style.color='white'; this.style.borderColor='#333f48'; this.style.transform='scale(1)';" 
       onmouseout="this.style.background='white'; this.style.color='#333f48'; this.style.borderColor='#333f48'; this.style.transform='scale(1)';">
@@ -685,7 +810,7 @@ GSM -
              
 
 
-    <a href="https://encrpc.github.io/fabricSub3/Taffata/H_Taffata.html"target="_blank">          
+    <a href="https://encrpc.github.io/Final_SubFabrics2/dth_/H_Deztek_hvy.html"target="_blank">          
 
 
 
@@ -693,20 +818,20 @@ GSM -
 <img src="dth2.jpg" alt="Fabric Image" class="image-hover">
        </a> 
  <div class="fabric-title">D E Z T E K &nbsp; H E A V Y</div>
-</div>
+</div><br>
 <div class="fabric-info">
                  <ul>
                     <li>⚪ Named Dez Tek because it (and you) stays cool when it's hot</li>
                     <li>⚪ Heavy weight breathable fabric with four-way stretch</li>
                     <li>⚪ Amazing for shooter shirts, shorts, and 2-ply reversibles</li>
-                  <li>  &nbsp;</li>  <li>  &nbsp;</li><br>
+                  <li>  &nbsp;</li>  <li>  &nbsp;</li>
                 </ul>
 
             </div>
 
  <div class="details">
                 <p>FABRIC COLORS&nbsp;  &nbsp;
-<br><br> </p>
+<br>
 
 </div>
 
@@ -717,9 +842,7 @@ GSM -
 
 
  <!-- iiiiiiiii -->
-
-<br><br>
-
+<div style="height: 10px; "></div>
 
  <!-- iiiiiiiii -->
 
@@ -741,7 +864,7 @@ GSM -
             </div>
              <div class="details">
                 <p> OPACITY RATING <span style="font-size:12px; color:#2F3C48;">&nbsp;4/5 (Slightly less opaque)</span>  </p>
-                <p class="sub-text">Provides a breathable finish with a slight see-through effect in lighter shades.</p><br>
+                <p class="sub-text">Provides a breathable finish with a slight see-through effect in lighter shades.</p><div style="height: 5px; "></div>
                 <p> WEIGHT  </p>
                 <p class="sub-text">Comfortable, Heavy weight fabric, perfect for athletic wear and lifestyle items.</p>
  <p class="sub-text">
@@ -750,7 +873,7 @@ GSM -
 GSM - 
 85%POLY 15%SP SJ
 </p>
-<br>
+<div style="height: 5px; "></div>
                 <p> EMBELLISHMENT TYPES </p>
                 <div class="embellishment-labels">
                  <span class="embellishment-label">Sublimation</span>
@@ -765,7 +888,7 @@ GSM -
 
 <!-- 0000000000000000000 -->
 
-      <div class="show-product-samples" onclick="window.open('https://encrpc.github.io/Sub-Fabric/H_Deztek_hvy.html', '_blank')"><span onclick="window.open('https://encrpc.github.io/Sub-Fabric/H_Deztek_hvy.html', '_blank')" 
+      <div class="show-product-samples" onclick="window.open('https://encrpc.github.io/Final_SubFabrics2/dth_/H_Deztek_hvy.html', '_blank')"><span onclick="window.open('https://encrpc.github.io/Final_SubFabrics2/dth_/H_Deztek_hvy.html', '_blank')" 
       style="display: inline-block; background: white; color: #333f48; border: 1px solid #333f48; padding: 8px 10px; font-size: 14px; font-weight:  ; border-radius: 8px; margin-left: 0px; cursor: pointer; transition: background 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out, transform 0.3s ease-in-out;"
       onmouseover="this.style.background='#333f48'; this.style.color='white'; this.style.borderColor='#333f48'; this.style.transform='scale(1)';" 
       onmouseout="this.style.background='white'; this.style.color='#333f48'; this.style.borderColor='#333f48'; this.style.transform='scale(1)';">
@@ -822,7 +945,7 @@ GSM -
            
 
 
-    <a href="https://encrpc.github.io/fabricSub3/Taffata/H_Taffata.html"target="_blank">          
+    <a href="https://encrpc.github.io/Final_SubFabrics8/Warp%20Tek/H_Warptek.html"target="_blank">          
 
 
 
@@ -830,7 +953,7 @@ GSM -
 <img src="wp2.jpg" alt="Fabric Image" class="image-hover">
        </a> 
  <div class="fabric-title">W A R P T E K</div>
-</div>
+</div><br>
 <div class="fabric-info">
                  <ul>
                     <li> ⚪ Rich, premium appearance
@@ -840,8 +963,7 @@ GSM -
 </li>
                     <li>  ⚪ Best suited for screen print, heat seal & embroidery
 
-                    <li>   &nbsp;
-</li>
+
 
 			<li> &nbsp;</li>
 
@@ -852,7 +974,7 @@ GSM -
 
  <div class="details">
                 <p>FABRIC COLORS&nbsp;  &nbsp;
-<br><br> </p>
+<br>
 
 </div>
 
@@ -863,15 +985,26 @@ GSM -
 
 
  <!-- iiiiiiiii -->
-
-<br><br>
-<span onclick="window.open('https://encrpc.github.io/Color2/Warptek.html', '_blank')" 
+<div style="height: 10px; "></div>
+<span onclick="openPopup('popup1')" 
       style="display: inline-block; background: #333f48; color: white; ; padding: 8px 10px; font-size: 14px; font-weight:  ; border-radius: 8px; margin-left: 0px; cursor: pointer; transition: background 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out, transform 0.3s ease-in-out;"
       onmouseover="this.style.background='white'; this.style.color='#333f48'; this.style.borderColor='#333f48'; this.style.transform='scale(1.02)';" 
 
       onmouseout="this.style.background='#333f48'; this.style.color='white'; this.style.borderColor='#333f48'; this.style.transform='scale(1)';">
     Explore All Stock Colors
+
+
+
 </span>&nbsp;
+
+
+
+
+
+
+
+
+
 
 
  <!-- iiiiiiiii -->
@@ -894,14 +1027,14 @@ GSM -
             </div>
             <div class="details">
                 <p> OPACITY RATING<span style="font-size:12px; color:#2F3C48;">&nbsp;5/5 (Very opaque)</span></p>
-                <p class="sub-text">Offering excellent coverage with a slightly translucent effect in lighter shades.<br></p><br>
+                <p class="sub-text">Offering excellent coverage with a slightly translucent effect in lighter shades.<br></p><div style="height: 5px; "></div>
               <p> WEIGHT  </p>
-                <p class="sub-text">Durable, mid-weight fabric with a rich look.</p> <p class="sub-text">
+                <p class="sub-text">Durable, mid-weight fabric with a rich look.</p> <p class="sub-text"><br>
 170
  
 GSM - 
 RECYCLE NYLON 79%, 21%SP 
-</p><br>
+</p><div style="height: 5px; "></div>
 
                 <p> EMBELLISHMENT TYPES </p>
                 <div class="embellishment-labels">
@@ -912,12 +1045,13 @@ RECYCLE NYLON 79%, 21%SP
                  
                     <span class="embellishment-label">Woven Label</span>
            
-                </div> <br> <br>
+                </div> <div style="height:33px; "></div>
+
             </div>
 
 <!-- 0000000000000000000 -->
 
-      <div class="show-product-samples" onclick="window.open('https://encrpc.github.io/fabricSub3/H_Warptek.html', '_blank')"><span onclick="window.open('https://encrpc.github.io/fabricSub3/H_Warptek.html', '_blank')" 
+      <div class="show-product-samples" onclick="window.open('https://encrpc.github.io/Final_SubFabrics8/Warp%20Tek/H_Warptek.html', '_blank')"><span onclick="window.open('https://encrpc.github.io/Final_SubFabrics8/Warp%20Tek/H_Warptek.html', '_blank')" 
       style="display: inline-block; background: white; color: #333f48; border: 1px solid #333f48; padding: 8px 10px; font-size: 14px; font-weight:  ; border-radius: 8px; margin-left: 0px; cursor: pointer; transition: background 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out, transform 0.3s ease-in-out;"
       onmouseover="this.style.background='#333f48'; this.style.color='white'; this.style.borderColor='#333f48'; this.style.transform='scale(1)';" 
       onmouseout="this.style.background='white'; this.style.color='#333f48'; this.style.borderColor='#333f48'; this.style.transform='scale(1)';">
@@ -964,7 +1098,7 @@ RECYCLE NYLON 79%, 21%SP
             
 
 
-    <a href="https://encrpc.github.io/fabricSub3/Taffata/H_Taffata.html"target="_blank">          
+    <a href="https://encrpc.github.io/Final_SubFabrics4/hydro_/H_Hydrotek.html"target="_blank">          
 
 
 
@@ -972,7 +1106,7 @@ RECYCLE NYLON 79%, 21%SP
 <img src="hy2.jpg" alt="Fabric Image" class="image-hover">
        </a> 
  <div class="fabric-title">H Y D R O T E K</div>
-</div>
+</div><br>
 <div class="fabric-info">
               <ul>
                     <li>⚪ Named HydroTek for it's bathing suit like feel </li>
@@ -991,7 +1125,7 @@ RECYCLE NYLON 79%, 21%SP
 
  <div class="details">
                 <p>FABRIC COLORS&nbsp;  &nbsp;
-<br><br> </p>
+<br>
 
 </div>
 
@@ -1001,9 +1135,9 @@ RECYCLE NYLON 79%, 21%SP
 
 
 
- <!-- iiiiiiiii -->
+ <div style="height: 10px; "></div>
 
-<br><br>
+
 
 
 
@@ -1027,7 +1161,7 @@ RECYCLE NYLON 79%, 21%SP
             </div>
              <div class="details">
                 <p> OPACITY RATING <span style="font-size:12px; color:#2F3C48;">&nbsp;4/5 (Slightly less opaque)</span>  </p>
-                <p class="sub-text">Opaque fabric with full coverage, blocking nearly all light</p><br>
+                <p class="sub-text">Opaque fabric with full coverage, blocking nearly all light</p><div style="height: 5px; "></div><br>
                 <p> WEIGHT  </p>
                 <p class="sub-text">Medium-weight fabric that offers excellent comfort and flexibility.</p>
  <p class="sub-text">
@@ -1035,7 +1169,7 @@ RECYCLE NYLON 79%, 21%SP
  
 GSM - 
 92%POLY 8%SPAN
-</p><br>
+</p><div style="height: 5px; "></div>
 
                 <p> EMBELLISHMENT TYPES </p>
                 <div class="embellishment-labels">
@@ -1051,7 +1185,7 @@ GSM -
 
 <!-- 0000000000000000000 -->
 
-      <div class="show-product-samples" onclick="window.open('https://encrpc.github.io/Sub-Fabric/H_Hydrotek.html', '_blank')"><span onclick="window.open('https://encrpc.github.io/Sub-Fabric/H_Hydrotek.html', '_blank')" 
+      <div class="show-product-samples" onclick="window.open('https://encrpc.github.io/Final_SubFabrics4/hydro_/H_Hydrotek.html', '_blank')"><span onclick="window.open('https://encrpc.github.io/Final_SubFabrics4/hydro_/H_Hydrotek.html', '_blank')" 
       style="display: inline-block; background: white; color: #333f48; border: 1px solid #333f48; padding: 8px 10px; font-size: 14px; font-weight:  ; border-radius: 8px; margin-left: 0px; cursor: pointer; transition: background 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out, transform 0.3s ease-in-out;"
       onmouseover="this.style.background='#333f48'; this.style.color='white'; this.style.borderColor='#333f48'; this.style.transform='scale(1)';" 
       onmouseout="this.style.background='white'; this.style.color='#333f48'; this.style.borderColor='#333f48'; this.style.transform='scale(1)';">
@@ -1098,7 +1232,7 @@ GSM -
            
 
 
-    <a href="https://encrpc.github.io/fabricSub3/Taffata/H_Taffata.html"target="_blank">          
+    <a href="https://encrpc.github.io/Final_SubFabrics/Bamboo/H_Bamboo.html"target="_blank">          
 
 
 
@@ -1106,7 +1240,7 @@ GSM -
 <img src="bmb2.jpg" alt="Fabric Image" class="image-hover">
        </a> 
  <div class="fabric-title">B A M B O O</div>
-</div>
+</div><br>
 <div class="fabric-info">
               <ul>
                     <li> ⚪ Soft, eco-friendly, and sustainable</li>
@@ -1126,7 +1260,7 @@ GSM -
 
  <div class="details">
                 <p>FABRIC COLORS&nbsp;  &nbsp;
-<br><br> </p>
+<br>
 
 </div>
 
@@ -1138,8 +1272,8 @@ GSM -
 
  <!-- iiiiiiiii -->
 
-<br><br>
-<span onclick="window.open('https://encrpc.github.io/Colors1/ColorBamboo.html', '_blank')" 
+<div style="height: 10px; "></div>
+<span onclick="openPopup('popup2')" 
       style="display: inline-block; background: #333f48; color: white; ; padding: 8px 10px; font-size: 14px; font-weight:  ; border-radius: 8px; margin-left: 0px; cursor: pointer; transition: background 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out, transform 0.3s ease-in-out;"
       onmouseover="this.style.background='white'; this.style.color='#333f48'; this.style.borderColor='#333f48'; this.style.transform='scale(1.02)';" 
 
@@ -1162,14 +1296,14 @@ GSM -
             </div>
              <div class="details">
                 <p> OPACITY RATING <span style="font-size:12px; color:#2F3C48;">&nbsp;4/5 (Slightly less opaque)</span>  </p>
-                <p class="sub-text">Providing good coverage with a slightly translucent feel.</p><br>
+                <p class="sub-text">Providing good coverage with a slightly translucent feel.</p><div style="height: 5px; "></div><br>
                 <p> WEIGHT  </p>
                 <p class="sub-text">Lightweight and ultra-soft with a silky feel.</p> <p class="sub-text">
 170
  
 GSM - 
 93% BAMBOO 7% SPANDEX
-</p><br>
+</p><div style="height: 5px; "></div>
                 <p> EMBELLISHMENT TYPES </p>
                 <div class="embellishment-labels">
                
@@ -1185,7 +1319,7 @@ GSM -
 
 <!-- 0000000000000000000 -->
 
-      <div class="show-product-samples" onclick="window.open('https://encrpc.github.io/Fabrics_Sub/H_Bamboo.html', '_blank')"><span onclick="window.open('https://encrpc.github.io/Fabrics_Sub/H_Bamboo.html', '_blank')" 
+      <div class="show-product-samples" onclick="window.open('https://encrpc.github.io/Final_SubFabrics/Bamboo/H_Bamboo.html', '_blank')"><span onclick="window.open('https://encrpc.github.io/Final_SubFabrics/Bamboo/H_Bamboo.html', '_blank')" 
       style="display: inline-block; background: white; color: #333f48; border: 1px solid #333f48; padding: 8px 10px; font-size: 14px; font-weight:  ; border-radius: 8px; margin-left: 0px; cursor: pointer; transition: background 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out, transform 0.3s ease-in-out;"
       onmouseover="this.style.background='#333f48'; this.style.color='white'; this.style.borderColor='#333f48'; this.style.transform='scale(1)';" 
       onmouseout="this.style.background='white'; this.style.color='#333f48'; this.style.borderColor='#333f48'; this.style.transform='scale(1)';">
@@ -1232,7 +1366,7 @@ GSM -
           
 
 
-    <a href="https://encrpc.github.io/fabricSub3/Taffata/H_Taffata.html"target="_blank">          
+    <a href="https://encrpc.github.io/Final_SubFabrics8/Fleece/H_Fleece.html"target="_blank">          
 
 
 
@@ -1240,7 +1374,7 @@ GSM -
 <img src="fl2.jpg" alt="Fabric Image" class="image-hover">
        </a> 
  <div class="fabric-title">F L E E C E</div>
-</div>
+</div><br>
 <div class="fabric-info">
                 <ul>
                     <li>⚪ Traditional Heavyweight Cotton Fleece </li>
@@ -1259,7 +1393,7 @@ GSM -
 
  <div class="details">
                 <p>FABRIC COLORS&nbsp;  &nbsp;
-<br><br> </p>
+<br>
 
 </div>
 
@@ -1271,8 +1405,8 @@ GSM -
 
  <!-- iiiiiiiii -->
 
-<br><br>
-<span onclick="window.open('https://encrpc.github.io/Color2/Fleece.html', '_blank')" 
+<div style="height: 10px; "></div>
+<span onclick="openPopup('popup3')" 
       style="display: inline-block; background: #333f48; color: white; ; padding: 8px 10px; font-size: 14px; font-weight:  ; border-radius: 8px; margin-left: 0px; cursor: pointer; transition: background 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out, transform 0.3s ease-in-out;"
       onmouseover="this.style.background='white'; this.style.color='#333f48'; this.style.borderColor='#333f48'; this.style.transform='scale(1.02)';" 
 
@@ -1295,14 +1429,14 @@ GSM -
             </div>
              <div class="details">
                 <p> OPACITY RATING <span style="font-size:12px; color:#2F3C48;">&nbsp;5/5 (Very opaque)</span>  </p>
-                <p class="sub-text">Maximum coverage, blocking nearly all light for a solid, non-transparent finish.</p><br>
+                <p class="sub-text">Maximum coverage, blocking nearly all light for a solid, non-transparent finish.</p><div style="height: 5px; "></div>
                 <p> WEIGHT  </p>
                 <p class="sub-text">Comfortable heavyweight fabric, designed to keep you warm and cozy.</p> <p class="sub-text">
 270
  
 GSM - 
 63%POLY 34%CTTN 3%SP 
-</p><br>
+</p><div style="height: 5px; "></div>
                 <p> EMBELLISHMENT TYPES </p>
                 <div class="embellishment-labels">
                 
@@ -1318,7 +1452,7 @@ GSM -
 
 <!-- 0000000000000000000 -->
 
-      <div class="show-product-samples" onclick="window.open('https://encrpc.github.io/Fabrics_Sub/H_Fleece.html', '_blank')"><span onclick="window.open('https://encrpc.github.io/Fabrics_Sub/H_Fleece.html', '_blank')" 
+      <div class="show-product-samples" onclick="window.open('https://encrpc.github.io/Final_SubFabrics8/Fleece/H_Fleece.html', '_blank')"><span onclick="window.open('https://encrpc.github.io/Final_SubFabrics8/Fleece/H_Fleece.html', '_blank')" 
       style="display: inline-block; background: white; color: #333f48; border: 1px solid #333f48; padding: 8px 10px; font-size: 14px; font-weight:  ; border-radius: 8px; margin-left: 0px; cursor: pointer; transition: background 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out, transform 0.3s ease-in-out;"
       onmouseover="this.style.background='#333f48'; this.style.color='white'; this.style.borderColor='#333f48'; this.style.transform='scale(1)';" 
       onmouseout="this.style.background='white'; this.style.color='#333f48'; this.style.borderColor='#333f48'; this.style.transform='scale(1)';">
@@ -1365,7 +1499,7 @@ GSM -
              
 
 
-    <a href="https://encrpc.github.io/fabricSub3/Taffata/H_Taffata.html"target="_blank">          
+    <a href="https://encrpc.github.io/Final_SubFabrics5/Sub_Fleece/H_Fleece.html"target="_blank">          
 
 
 
@@ -1373,7 +1507,7 @@ GSM -
 <img src="flsub2.jpg" alt="Fabric Image" class="image-hover">
        </a> 
  <div class="fabric-title">SUBLIMATED &nbsp; FLEECE</div>
-</div>
+</div><br>
 <div class="fabric-info">
                <ul>
                     <li>⚪ Traditional Heavyweight Cotton Fleece </li>
@@ -1392,7 +1526,7 @@ GSM -
 
  <div class="details">
                 <p>FABRIC COLORS&nbsp;  &nbsp;
-<br><br> </p>
+<br>
 
 </div>
 
@@ -1402,9 +1536,9 @@ GSM -
 
 
 
- <!-- iiiiiiiii -->
+<div style="height: 10px; "></div>
 
-<br><br>
+
 
 
 
@@ -1428,17 +1562,17 @@ GSM -
             </div>
              <div class="details">
                 <p> OPACITY RATING<span style="font-size:12px; color:#2F3C48;">&nbsp;5/5 (Very opaque)</span>   </p>
-                <p class="sub-text">Maximum coverage, blocking nearly all light for a solid, non-transparent finish.</p><br>
+                <p class="sub-text">Maximum coverage, blocking nearly all light for a solid, non-transparent finish.</p><div style="height: 5px; "></div>
                 <p> WEIGHT  </p>
                 <p class="sub-text">Comfortable heavyweight fabric, designed to keep you warm and cozy.</p> <p class="sub-text">
 320
  
 GSM - 
 68%POLY 29%CTTN 3%SP 
-</p><br>
+</p><div style="height: 5px; "></div>
                 <p> EMBELLISHMENT TYPES </p>
                 <div class="embellishment-labels">
-            
+                <span class="embellishment-label">Sublimation</span>
                     <span class="embellishment-label">Screen Print</span>
                     <span class="embellishment-label">Embroidery</span>
                     <span class="embellishment-label">Heat Seal</span>
@@ -1451,8 +1585,7 @@ GSM -
 
 <!-- 0000000000000000000 -->
 
-      <div class="show-product-samples" onclick="return false('q', '_blank')"><span onclick="return false('q', '_blank')" 
-      style="display: inline-block; background: white; color: #333f48; border: 1px solid #333f48; padding: 8px 10px; font-size: 14px; font-weight:  ; border-radius: 8px; margin-left: 0px; cursor: pointer; transition: background 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out, transform 0.3s ease-in-out;"
+      <div class="show-product-samples" onclick="window.open('https://encrpc.github.io/Final_SubFabrics5/Sub_Fleece/H_Fleece.html', '_blank')"><span onclick="window.open('https://encrpc.github.io/Final_SubFabrics5/Sub_Fleece/H_Fleece.html', '_blank')" style="display: inline-block; background: white; color: #333f48; border: 1px solid #333f48; padding: 8px 10px; font-size: 14px; font-weight:  ; border-radius: 8px; margin-left: 0px; cursor: pointer; transition: background 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out, transform 0.3s ease-in-out;"
       onmouseover="this.style.background='#333f48'; this.style.color='white'; this.style.borderColor='#333f48'; this.style.transform='scale(1)';" 
       onmouseout="this.style.background='white'; this.style.color='#333f48'; this.style.borderColor='#333f48'; this.style.transform='scale(1)';">
      View Product Samples
@@ -1498,7 +1631,7 @@ GSM -
            
 
 
-    <a href="https://encrpc.github.io/fabricSub3/Taffata/H_Taffata.html"target="_blank">          
+    <a href="https://encrpc.github.io/Final_SubFabrics4/French%20Terry/H_Frenceterry.html"target="_blank">          
 
 
 
@@ -1506,7 +1639,7 @@ GSM -
 <img src="french2.jpg" alt="Fabric Image" class="image-hover">
        </a> 
  <div class="fabric-title">F R E N C H  &nbsp; T E R R Y</div>
-</div>
+</div><br>
 <div class="fabric-info">
                  <ul>
                     <li>⚪ Traditional French Terry Fabric </li>
@@ -1527,7 +1660,7 @@ GSM -
 
  <div class="details">
                 <p>FABRIC COLORS&nbsp;  &nbsp;
-<br><br> </p>
+<br>
 
 </div>
 
@@ -1539,13 +1672,13 @@ GSM -
 
  <!-- iiiiiiiii -->
 
-<br><br>
+<div style="height: 10px; "></div>
 
 
 
  <!-- iiiiiiiii -->
 
-<span onclick="window.open('https://encrpc.github.io/Color2/FrenchTerry.html', '_blank')" 
+<span onclick="openPopup('popup4')" 
       style="display: inline-block; background: #333f48; color: white; ; padding: 8px 10px; font-size: 14px; font-weight:  ; border-radius: 8px; margin-left: 0px; cursor: pointer; transition: background 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out, transform 0.3s ease-in-out;"
       onmouseover="this.style.background='white'; this.style.color='#333f48'; this.style.borderColor='#333f48'; this.style.transform='scale(1.02)';" 
 
@@ -1564,14 +1697,14 @@ GSM -
             </div>
             <div class="details">
                 <p> OPACITY RATING <span style="font-size:12px; color:#2F3C48;">&nbsp;5/5 (Very opaque)</span>  </p>
-                <p class="sub-text">Maximum coverage, blocking nearly all light for a solid, non-transparent finish.</p><br>
+                <p class="sub-text">Maximum coverage, blocking nearly all light for a solid, non-transparent finish.</p><div style="height: 5px; "></div>
                 <p> WEIGHT  </p>
                 <p class="sub-text">Comfortable heavyweight fabric, designed to keep you warm and cozy.</p> <p class="sub-text">
 250
  
 GSM - 
 62%POLY 33%CTN 5%SP
-</p><br>
+</p><div style="height: 5px; "></div>
                 <p> EMBELLISHMENT TYPES </p>
                 <div class="embellishment-labels">
                 
@@ -1587,7 +1720,7 @@ GSM -
 
 <!-- 0000000000000000000 -->
 
-      <div class="show-product-samples" onclick="window.open('https://encrpc.github.io/Fabrics_Sub/H_Frenceterry.html', '_blank')"><span onclick="window.open('https://encrpc.github.io/Fabrics_Sub/H_Frenceterry.html', '_blank')" 
+      <div class="show-product-samples" onclick="window.open('https://encrpc.github.io/Final_SubFabrics4/French%20Terry/H_Frenceterry.html', '_blank')"><span onclick="window.open('https://encrpc.github.io/Final_SubFabrics4/French%20Terry/H_Frenceterry.html', '_blank')" 
       style="display: inline-block; background: white; color: #333f48; border: 1px solid #333f48; padding: 8px 10px; font-size: 14px; font-weight:  ; border-radius: 8px; margin-left: 0px; cursor: pointer; transition: background 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out, transform 0.3s ease-in-out;"
       onmouseover="this.style.background='#333f48'; this.style.color='white'; this.style.borderColor='#333f48'; this.style.transform='scale(1)';" 
       onmouseout="this.style.background='white'; this.style.color='#333f48'; this.style.borderColor='#333f48'; this.style.transform='scale(1)';">
@@ -1625,7 +1758,7 @@ GSM -
             
 
 
-    <a href="https://encrpc.github.io/fabricSub3/Taffata/H_Taffata.html"target="_blank">          
+    <a href="https://encrpc.github.io/Final_SubFabrics5/RIPTEK/H_Riptek.html"target="_blank">          
 
 
 
@@ -1633,7 +1766,7 @@ GSM -
 <img src="rip2.jpg" alt="Fabric Image" class="image-hover">
        </a> 
  <div class="fabric-title">R I P T E K</div>
-</div>
+</div><br>
 <div class="fabric-info">
                <ul>
                     <li>⚪ Named RipTek because of the Ripstop reinforced weave
@@ -1657,7 +1790,7 @@ GSM -
 
  <div class="details">
                 <p>FABRIC COLORS&nbsp;  &nbsp;
-<br><br> </p>
+<br>
 
 </div>
 
@@ -1669,8 +1802,8 @@ GSM -
 
  <!-- iiiiiiiii -->
 
-<br><br>
-<span onclick="window.open('https://encrpc.github.io/Color2/Riptek.html', '_blank')" 
+<div style="height: 10px; "></div>
+<span onclick="openPopup('popup5')" 
       style="display: inline-block; background: #333f48; color: white; ; padding: 8px 10px; font-size: 14px; font-weight:  ; border-radius: 8px; margin-left: 0px; cursor: pointer; transition: background 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out, transform 0.3s ease-in-out;"
       onmouseover="this.style.background='white'; this.style.color='#333f48'; this.style.borderColor='#333f48'; this.style.transform='scale(1.02)';" 
 
@@ -1693,7 +1826,7 @@ GSM -
             </div>
            <div class="details">
                 <p> OPACITY RATING <span style="font-size:12px; color:#2F3C48;">&nbsp;5/5 (Very opaque)</span> <br> </p>
-                <p class="sub-text">Opaque fabric with a reinforced weave for added durability.<br><br></p><br>
+                <p class="sub-text">Opaque fabric with a reinforced weave for added durability.<br><br></p><div style="height: 5px; "></div>
                 <p> WEIGHT  </p>
                 <p class="sub-text">Lightweight yet strong, balancing breathability with superior strength.</p>
  <p class="sub-text">
@@ -1701,7 +1834,7 @@ GSM -
  
 GSM - 
 100%POLY CJt</p>
-<br>
+<div style="height: 5px; "></div>
                 <p> EMBELLISHMENT TYPES </p>
                 <div class="embellishment-labels">
                 
@@ -1717,7 +1850,7 @@ GSM -
 
 <!-- 0000000000000000000 -->
 
-      <div class="show-product-samples" onclick="window.open('https://encrpc.github.io/fabricSub4/H_Riptek.html', '_blank')"><span onclick="window.open('https://encrpc.github.io/fabricSub4/H_Riptek.html', '_blank')" 
+      <div class="show-product-samples" onclick="window.open('https://encrpc.github.io/Final_SubFabrics5/RIPTEK/H_Riptek.html', '_blank')"><span onclick="window.open('https://encrpc.github.io/Final_SubFabrics5/RIPTEK/H_Riptek.html', '_blank')" 
       style="display: inline-block; background: white; color: #333f48; border: 1px solid #333f48; padding: 8px 10px; font-size: 14px; font-weight:  ; border-radius: 8px; margin-left: 0px; cursor: pointer; transition: background 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out, transform 0.3s ease-in-out;"
       onmouseover="this.style.background='#333f48'; this.style.color='white'; this.style.borderColor='#333f48'; this.style.transform='scale(1)';" 
       onmouseout="this.style.background='white'; this.style.color='#333f48'; this.style.borderColor='#333f48'; this.style.transform='scale(1)';">
@@ -1763,7 +1896,7 @@ GSM -
           
 
 
-    <a href="https://encrpc.github.io/fabricSub3/Taffata/H_Taffata.html"target="_blank">          
+    <a href="https://encrpc.github.io/Final_SubFabrics7/VersaTek/H_VersaTek.html"target="_blank">          
 
 
 
@@ -1771,7 +1904,7 @@ GSM -
 <img src="versa2.jpg" alt="Fabric Image" class="image-hover">
        </a> 
  <div class="fabric-title">V E R S A T E K</div>
-</div>
+</div><br>
 <div class="fabric-info">
                  <ul>
                     <li>⚪ Named VersaTek for it's versatile functionality </li>
@@ -1792,7 +1925,7 @@ GSM -
 
  <div class="details">
                 <p>FABRIC COLORS&nbsp;  &nbsp;
-<br><br> </p>
+<br>
 
 </div>
 
@@ -1804,8 +1937,8 @@ GSM -
 
  <!-- iiiiiiiii -->
 
-<br><br>
-<span onclick="window.open('https://encrpc.github.io/Colors1/SublimatedFabs.html', '_blank')" 
+<div style="height: 10px; "></div>
+<span onclick="openPopup('popup6')" 
       style="display: inline-block; background: #333f48; color: white; ; padding: 8px 10px; font-size: 14px; font-weight:  ; border-radius: 8px; margin-left: 0px; cursor: pointer; transition: background 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out, transform 0.3s ease-in-out;"
       onmouseover="this.style.background='white'; this.style.color='#333f48'; this.style.borderColor='#333f48'; this.style.transform='scale(1.02)';" 
 
@@ -1834,13 +1967,13 @@ GSM -
             </div>
              <div class="details">
                 <p> OPACITY RATING <span style="font-size:12px; color:#2F3C48;">&nbsp;4/5 (Slightly less opaque)</span>  </p>
-                <p class="sub-text">Lightweight yet durable, offering flexibility and comfort for versatile use.</p><br>
+                <p class="sub-text">Lightweight yet durable, offering flexibility and comfort for versatile use.</p><div style="height: 5px; "></div>
                <br> <p> WEIGHT  </p>
                 <p class="sub-text">Comfortable heavyweight fabric, designed to keep you warm and cozy.</p> <p class="sub-text">
 170
  
 GSM - 
-92%POLY 8%SPAN</p><br>
+92%POLY 8%SPAN</p><div style="height: 5px; "></div>
                 <p> EMBELLISHMENT TYPES </p>
                 <div class="embellishment-labels">
                   <span class="embellishment-label">Sublimation</span>
@@ -1855,7 +1988,7 @@ GSM -
 
 <!-- 0000000000000000000 -->
 
-      <div class="show-product-samples" onclick="window.open('https://encrpc.github.io/fabricSub4/H_VersaTek.html', '_blank')"><span onclick="window.open('https://encrpc.github.io/fabricSub4/H_VersaTek.html', '_blank')" 
+      <div class="show-product-samples" onclick="window.open('https://encrpc.github.io/Final_SubFabrics7/VersaTek/H_VersaTek.html', '_blank')"><span onclick="window.open('https://encrpc.github.io/Final_SubFabrics7/VersaTek/H_VersaTek.html', '_blank')" 
       style="display: inline-block; background: white; color: #333f48; border: 1px solid #333f48; padding: 8px 10px; font-size: 14px; font-weight:  ; border-radius: 8px; margin-left: 0px; cursor: pointer; transition: background 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out, transform 0.3s ease-in-out;"
       onmouseover="this.style.background='#333f48'; this.style.color='white'; this.style.borderColor='#333f48'; this.style.transform='scale(1)';" 
       onmouseout="this.style.background='white'; this.style.color='#333f48'; this.style.borderColor='#333f48'; this.style.transform='scale(1)';">
@@ -1902,7 +2035,7 @@ GSM -
              
 
 
-    <a href="https://encrpc.github.io/fabricSub3/Taffata/H_Taffata.html"target="_blank">          
+    <a href="https://encrpc.github.io/Final_SubFabrics6/temptek/H_TempTek.html"target="_blank">          
 
 
 
@@ -1910,7 +2043,7 @@ GSM -
 <img src="tmp2.jpg" alt="Fabric Image" class="image-hover">
        </a> 
  <div class="fabric-title">T E M P T E K</div>
-</div>
+</div><br>
 <div class="fabric-info">
                 <ul>
                     <li>⚪ Named TempTek because it keeps you warm and dry
@@ -1934,7 +2067,7 @@ GSM -
 
  <div class="details">
                 <p>FABRIC COLORS&nbsp;  &nbsp;
-<br><br> </p>
+<br>
 
 </div>
 
@@ -1946,8 +2079,8 @@ GSM -
 
  <!-- iiiiiiiii -->
 
-<br><br>
-<span onclick="window.open('https://encrpc.github.io/Colors1/ColorTemptek.html', '_blank')" 
+<div style="height: 10px; "></div>
+<span onclick="openPopup('popup7')" 
       style="display: inline-block; background: #333f48; color: white; ; padding: 8px 10px; font-size: 14px; font-weight:  ; border-radius: 8px; margin-left: 0px; cursor: pointer; transition: background 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out, transform 0.3s ease-in-out;"
       onmouseover="this.style.background='white'; this.style.color='#333f48'; this.style.borderColor='#333f48'; this.style.transform='scale(1.02)';" 
 
@@ -1971,14 +2104,14 @@ GSM -
             </div>
              <div class="details">
                 <p> OPACITY RATING <span style="font-size:12px; color:#2F3C48;">&nbsp;5/5 (Very opaque)</span>  </p>
-                <p class="sub-text">Opaque fabric with excellent coverage and protection.</p><br>
+                <p class="sub-text">Opaque fabric with excellent coverage and protection.</p><div style="height: 5px; "></div>
              <br>   <p> WEIGHT  </p>
                 <p class="sub-text">Medium to heavyweight, designed to keep you warm and dry.</p> <p class="sub-text">
 -
  
 GSM - 
 --
-</p><br>
+</p><div style="height: 5px; "></div>
                 <p> EMBELLISHMENT TYPES </p>
                 <div class="embellishment-labels">
                  
@@ -1993,7 +2126,7 @@ GSM -
 
 <!-- 0000000000000000000 -->
 
-      <div class="show-product-samples" onclick="window.open('https://encrpc.github.io/fabricSub3/H_TempTek.html', '_blank')"><span onclick="window.open('https://encrpc.github.io/fabricSub3/H_TempTek.html', '_blank')" 
+      <div class="show-product-samples" onclick="window.open('https://encrpc.github.io/Final_SubFabrics6/temptek/H_TempTek.html', '_blank')"><span onclick="window.open('https://encrpc.github.io/Final_SubFabrics6/temptek/H_TempTek.html', '_blank')" 
       style="display: inline-block; background: white; color: #333f48; border: 1px solid #333f48; padding: 8px 10px; font-size: 14px; font-weight:  ; border-radius: 8px; margin-left: 0px; cursor: pointer; transition: background 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out, transform 0.3s ease-in-out;"
       onmouseover="this.style.background='#333f48'; this.style.color='white'; this.style.borderColor='#333f48'; this.style.transform='scale(1)';" 
       onmouseout="this.style.background='white'; this.style.color='#333f48'; this.style.borderColor='#333f48'; this.style.transform='scale(1)';">
@@ -2040,7 +2173,7 @@ GSM -
             
 
 
-    <a href="https://encrpc.github.io/fabricSub3/Taffata/H_Taffata.html"target="_blank">          
+    <a href="https://encrpc.github.io/Final_SubFabrics2/Cotton/H_Cotton.html"target="_blank">          
 
 
 
@@ -2048,7 +2181,7 @@ GSM -
 <img src="ctn2.jpg" alt="Fabric Image" class="image-hover">
        </a> 
  <div class="fabric-title">C O T T O N</div>
-</div>
+</div><br>
 <div class="fabric-info">
                         <ul>
                     <li>⚪ Enhanced for superior comfort and breathability. </li>
@@ -2066,7 +2199,7 @@ GSM -
 
  <div class="details">
                 <p>FABRIC COLORS&nbsp;  &nbsp;
-<br><br> </p>
+<br>
 
 </div>
 
@@ -2078,8 +2211,8 @@ GSM -
 
  <!-- iiiiiiiii -->
 
-<br><br>
-<span onclick="window.open('https://encrpc.github.io/Colors1/ColorCotton.html', '_blank')" 
+<div style="height: 10px; "></div>
+<span onclick="openPopup('popup8')" 
       style="display: inline-block; background: #333f48; color: white; ; padding: 8px 10px; font-size: 14px; font-weight:  ; border-radius: 8px; margin-left: 0px; cursor: pointer; transition: background 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out, transform 0.3s ease-in-out;"
       onmouseover="this.style.background='white'; this.style.color='#333f48'; this.style.borderColor='#333f48'; this.style.transform='scale(1.02)';" 
 
@@ -2102,14 +2235,14 @@ GSM -
             </div>
               <div class="details">
                 <p> OPACITY RATING <span style="font-size:12px; color:#2F3C48;">&nbsp;5/5 (Very opaque)</span>  </p>
-                <p class="sub-text">Opaque fabric with full coverage, ensuring a solid and non-transparent finish.</p><br>
+                <p class="sub-text">Opaque fabric with full coverage, ensuring a solid and non-transparent finish.</p><div style="height: 5px; "></div>
                 <p> WEIGHT  </p>
                 <p class="sub-text">Mid-weight, offering a soft, breathable, and durable feel.</p> <p class="sub-text">
-170
+150
  
 GSM - 
-100% Cotton
-</p><br>
+60% Cotton 40% Poly
+</p><div style="height: 5px; "></div>
                 <p> EMBELLISHMENT TYPES </p>
                 <div class="embellishment-labels">
                
@@ -2125,7 +2258,7 @@ GSM -
 
 <!-- 0000000000000000000 -->
 
-      <div class="show-product-samples" onclick="window.open('https://encrpc.github.io/Fabrics_Sub/H_Cotton.html', '_blank')"><span onclick="window.open('https://encrpc.github.io/Fabrics_Sub/H_Cotton.html', '_blank')" 
+      <div class="show-product-samples" onclick="window.open('https://encrpc.github.io/Final_SubFabrics2/Cotton/H_Cotton.html', '_blank')"><span onclick="window.open('https://encrpc.github.io/Final_SubFabrics2/Cotton/H_Cotton.html', '_blank')" 
       style="display: inline-block; background: white; color: #333f48; border: 1px solid #333f48; padding: 8px 10px; font-size: 14px; font-weight:  ; border-radius: 8px; margin-left: 0px; cursor: pointer; transition: background 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out, transform 0.3s ease-in-out;"
       onmouseover="this.style.background='#333f48'; this.style.color='white'; this.style.borderColor='#333f48'; this.style.transform='scale(1)';" 
       onmouseout="this.style.background='white'; this.style.color='#333f48'; this.style.borderColor='#333f48'; this.style.transform='scale(1)';">
@@ -2172,15 +2305,15 @@ GSM -
              
 
 
-    <a href="https://encrpc.github.io/fabricSub3/Taffata/H_Taffata.html"target="_blank">          
+    <a href="https://encrpc.github.io/Final_SubFabrics2/Cotton%20Blend/H_Cottonblend.html"target="_blank">          
 
 
 
     <img src="CottonSub.jpg" alt="Fabric Image" class="image-main">
 <img src="CottonSub2.jpg" alt="Fabric Image" class="image-hover">
        </a> 
- <div class="fabric-title">C O T T O N &nbsp; B L E N D</div>
-</div>
+ <div class="fabric-title">SUBLIMATED &nbsp; COTTON </div>
+</div><br>
 <div class="fabric-info">
                  <ul>
                     <li>⚪ A unique cotton blend engineered for sublimation </li>
@@ -2199,7 +2332,7 @@ GSM -
 
  <div class="details">
                 <p>FABRIC COLORS&nbsp;  &nbsp;
-<br><br> </p>
+<br>
 
 </div>
 
@@ -2209,9 +2342,9 @@ GSM -
 
 
 
- <!-- iiiiiiiii -->
+<div style="height: 10px; "></div>
 
-<br><br>
+
 
 
 
@@ -2235,15 +2368,15 @@ GSM -
             </div>
              <div class="details">
                <p> OPACITY RATING <span style="font-size:12px; color:#2F3C48;">&nbsp;5/5 (Very opaque)</span>  </p>
-                <p class="sub-text">Opaque fabric with full coverage, ensuring a solid and non-transparent finish.</p><br>
+                <p class="sub-text">Opaque fabric with full coverage, ensuring a solid and non-transparent finish.</p><div style="height: 5px; "></div>
                 <p> WEIGHT  </p>
 
                 <p class="sub-text">Mid-weight, offering a soft, breathable, and durable feel.</p> <p class="sub-text">
-180
+150
  
 GSM - 
- 80%CTN 20%POLY
-</p><br>
+35% Cotton 65 Poly
+</p><div style="height: 5px; "></div>
                 <p> EMBELLISHMENT TYPES </p>
                 <div class="embellishment-labels">
                     <span class="embellishment-label">Sublimation</span>
@@ -2306,7 +2439,7 @@ GSM -
              
 
 
-    <a href="https://encrpc.github.io/fabricSub3/Taffata/H_Taffata.html"target="_blank">          
+    <a href="https://encrpc.github.io/Final_SubFabrics5/mach/H_Mach.html"target="_blank">          
 
 
 
@@ -2314,7 +2447,7 @@ GSM -
 <img src="mch2.jpg" alt="Fabric Image" class="image-hover">
        </a> 
  <div class="fabric-title">M A C H</div>
-</div>
+</div><br>
 <div class="fabric-info">
                 <ul>
                     <li>  ⚪ Durable fabric for long-lasting wear
@@ -2336,7 +2469,7 @@ GSM -
 
  <div class="details">
                 <p>FABRIC COLORS&nbsp;  &nbsp;
-<br><br> </p>
+<br>
 
 </div>
 
@@ -2348,7 +2481,7 @@ GSM -
 
  <!-- iiiiiiiii -->
 
-<br><br>
+<div style="height: 10px; "></div>
 
 <span onclick="openDialog()" 
       style="display: inline-block; background: red; color: white;  padding: 8px 10px; font-size: 14px; font-weight:  ; border-radius: 8px; margin-left: 0px; cursor: pointer; transition: background 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out, transform 0.3s ease-in-out;"
@@ -2373,21 +2506,21 @@ GSM -
             </div>
             <div class="details">
                 <p> OPACITY RATING <span style="font-size:12px; color:#2F3C48;">&nbsp;4/5 (Slightly less opaque)</span>  </p>
-                <p class="sub-text">Maximum coverage for a solid, opaque finish.</p><br>
+                <p class="sub-text">Maximum coverage for a solid, opaque finish.<br></p><div style="height: 15px; "></div>
                 <p> WEIGHT  </p>
                 <p class="sub-text">Lightweight fabric designed for comfort and performance.</p> <p class="sub-text">
 180
  
 GSM - 
 90%POLY 10%SP SJ 
-</p><br>
+</p><div style="height: 5px; "></div>
                 <p> EMBELLISHMENT TYPES </p>
                 <div class="embellishment-labels">
-              
+               <span class="embellishment-label">Sublimation</span>
                     <span class="embellishment-label">Screen Print</span>
                     <span class="embellishment-label">Embroidery</span>
                     <span class="embellishment-label">Heat Seal</span>
-                  <span class="embellishment-label"> Tackle Twill</span>
+                
                     <span class="embellishment-label">Woven Label</span>
         
                 </div>
@@ -2395,7 +2528,7 @@ GSM -
 
 <!-- 0000000000000000000 -->
 
-      <div class="show-product-samples" onclick="window.open('https://encrpc.github.io/fabricSub3/H_Mach.html', '_blank')"><span onclick="window.open('https://encrpc.github.io/fabricSub3/H_Mach.html', '_blank')" 
+      <div class="show-product-samples" onclick="window.open('https://encrpc.github.io/Final_SubFabrics5/mach/H_Mach.html', '_blank')"><span onclick="window.open('https://encrpc.github.io/Final_SubFabrics5/mach/H_Mach.html', '_blank')" 
       style="display: inline-block; background: white; color: #333f48; border: 1px solid #333f48; padding: 8px 10px; font-size: 14px; font-weight:  ; border-radius: 8px; margin-left: 0px; cursor: pointer; transition: background 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out, transform 0.3s ease-in-out;"
       onmouseover="this.style.background='#333f48'; this.style.color='white'; this.style.borderColor='#333f48'; this.style.transform='scale(1)';" 
       onmouseout="this.style.background='white'; this.style.color='#333f48'; this.style.borderColor='#333f48'; this.style.transform='scale(1)';">
@@ -2442,7 +2575,7 @@ GSM -
             
 
 
-    <a href="https://encrpc.github.io/fabricSub3/Taffata/H_Taffata.html"target="_blank">          
+    <a href="https://encrpc.github.io/Final_SubFabrics/Airtek/H_Airteks.html"target="_blank">          
 
 
 
@@ -2450,7 +2583,7 @@ GSM -
 <img src="air2.jpg" alt="Fabric Image" class="image-hover">
        </a> 
  <div class="fabric-title">A I R T E K</div>
-</div>
+</div><br>
 <div class="fabric-info">
                  <ul>
                     <li> ⚪ Named AirTek because of it's airy ventilation</li>
@@ -2469,7 +2602,7 @@ GSM -
 
  <div class="details">
                 <p>FABRIC COLORS&nbsp;  &nbsp;
-<br><br> </p>
+<br>
 
 </div>
 
@@ -2481,7 +2614,7 @@ GSM -
 
  <!-- iiiiiiiii -->
 
-<br><br>
+<div style="height: 10px; "></div>
 
 
 
@@ -2507,7 +2640,7 @@ GSM -
                  <p> OPACITY RATING <span style="font-size:12px; color:#2F3C48;">&nbsp;1/5 (Nearly transparent)</span> </p>
                 <p class="sub-text">Lightweight and semi-opaque, offering airflow while maintaining coverage.
 
-</p><br>
+</p><div style="height: 10px; "></div>
                 <p> WEIGHT  </p>
 
                 <p class="sub-text">Ultra-light fabric with a breathable, airy feel for maximum ventilation.</p> <p class="sub-text">
@@ -2515,7 +2648,7 @@ GSM -
  
 GSM - 
 100%POLY
-</p><br>
+</p><div style="height: 5px; "></div>
                 <p> EMBELLISHMENT TYPES </p>
                 <div class="embellishment-labels">
                    <span class="embellishment-label">Sublimation</span>
@@ -2523,13 +2656,13 @@ GSM -
                  
                   
              
-                </div><br>  
+                </div><br>  <br>  
             </div>
    
 
 <!-- 0000000000000000000 -->
 
-      <div class="show-product-samples" onclick="window.open('https://encrpc.github.io/fabricSub4/H_Airtek.html', '_blank')"><span onclick="window.open('https://encrpc.github.io/fabricSub4/H_Airtek.html', '_blank')" 
+      <div class="show-product-samples" onclick="window.open('https://encrpc.github.io/Final_SubFabrics/Airtek/H_Airteks.html', '_blank')"><span onclick="window.open('https://encrpc.github.io/Final_SubFabrics/Airtek/H_Airteks.html', '_blank')" 
       style="display: inline-block; background: white; color: #333f48; border: 1px solid #333f48; padding: 8px 10px; font-size: 14px; font-weight:  ; border-radius: 8px; margin-left: 0px; cursor: pointer; transition: background 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out, transform 0.3s ease-in-out;"
       onmouseover="this.style.background='#333f48'; this.style.color='white'; this.style.borderColor='#333f48'; this.style.transform='scale(1)';" 
       onmouseout="this.style.background='white'; this.style.color='#333f48'; this.style.borderColor='#333f48'; this.style.transform='scale(1)';">
@@ -2576,7 +2709,7 @@ GSM -
              
 
 
-    <a href="https://encrpc.github.io/fabricSub3/Taffata/H_Taffata.html"target="_blank">          
+    <a href="https://encrpc.github.io/Final_SubFabrics6/VentTek/H_VentTek.html"target="_blank">          
 
 
 
@@ -2584,7 +2717,7 @@ GSM -
 <img src="ven2.jpg" alt="Fabric Image" class="image-hover">
        </a> 
  <div class="fabric-title">V E N T T E K</div>
-</div>
+</div><br>
 <div class="fabric-info">
                 <ul>
                     <li>⚪ Named VentTek for it's mesh feel and ventilation properties </li>
@@ -2603,7 +2736,7 @@ GSM -
 
  <div class="details">
                 <p>FABRIC COLORS&nbsp;  &nbsp;
-<br><br> </p>
+<br>
 
 </div>
 
@@ -2615,7 +2748,7 @@ GSM -
 
  <!-- iiiiiiiii -->
 
-<br><br>
+<div style="height: 10px; "></div>
 
 
 
@@ -2639,14 +2772,14 @@ GSM -
             </div>
             <div class="details">
                 <p> OPACITY RATING <span style="font-size:12px; color:#2F3C48;">&nbsp;2/5 (Slightly translucent)</span> </p>
-                <p class="sub-text">Lightly opaque with a breathable mesh construction.</p><br>
+                <p class="sub-text">Lightly opaque with a breathable mesh construction.<br><br></p><div style="height: 5px; "></div>
                 <p> WEIGHT  </p>
                 <p class="sub-text">Lightweight and airy, designed for optimal ventilation.</p> <p class="sub-text">
 120
  
 GSM - 
 100%POLY
-</p><br>
+</p><div style="height: 15px; "></div>
                 <p> EMBELLISHMENT TYPES </p>
                 <div class="embellishment-labels">
                <span class="embellishment-label">Sublimation</span>
@@ -2716,7 +2849,7 @@ GSM -
                 
 
 
-    <a href="https://encrpc.github.io/fabricSub3/Taffata/H_Taffata.html"target="_blank">          
+    <a href="https://encrpc.github.io/Final_SubFabrics4/lattek/H_Lattek.html"target="_blank">          
 
 
 
@@ -2724,7 +2857,7 @@ GSM -
 <img src="lt2.jpg" alt="Fabric Image" class="image-hover">
        </a> 
  <div class="fabric-title">L A T T E K</div>
-</div>
+</div><br>
 <div class="fabric-info">
                 <ul>
                     <li>⚪ Named LatTek because it stretches laterally </li>
@@ -2743,7 +2876,7 @@ GSM -
 
  <div class="details">
                 <p>FABRIC COLORS&nbsp;  &nbsp;
-<br><br> </p>
+<br>
 
 </div>
 
@@ -2755,7 +2888,7 @@ GSM -
 
  <!-- iiiiiiiii -->
 
-<br><br>
+<div style="height: 10px; "></div>
 <span onclick="openDialog()" 
       style="display: inline-block; background: red; color: white;  padding: 8px 10px; font-size: 14px; font-weight:  ; border-radius: 8px; margin-left: 0px; cursor: pointer; transition: background 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out, transform 0.3s ease-in-out;"
       onmouseover="this.style.background='white'; this.style.color='#333f48'; this.style.borderColor='#333f48'; this.style.transform='scale(1.02)';" 
@@ -2779,14 +2912,14 @@ GSM -
             </div>
              <div class="details">
                 <p> OPACITY RATING <span style="font-size:12px; color:#2F3C48;">&nbsp;3/5 (Semi-opaque)</span>  </p>
-                <p class="sub-text">Lightweight and slightly opaque, providing breathability with minimal see-through effect.</p><br>
+                <p class="sub-text">Lightweight and slightly opaque, providing breathability with minimal see-through effect.</p><div style="height: 5px; "></div>
                 <p> WEIGHT  </p>
                 <p class="sub-text">Lightweight fabric with a balance of durability and flexibility for activewear.</p> <p class="sub-text">
 -
  
 GSM - 
 --
-</p><br>
+</p><div style="height: 15px; "></div>
                 <p> EMBELLISHMENT TYPES </p>
                 <div class="embellishment-labels">
              <span class="embellishment-label">Sublimation</span>
@@ -2800,7 +2933,7 @@ GSM -
 
 <!-- 0000000000000000000 -->
 
-      <div class="show-product-samples" onclick="window.open('https://encrpc.github.io/fabricSub4/H_Lattek.html', '_blank')"><span onclick="window.open('https://encrpc.github.io/fabricSub4/H_Lattek.html', '_blank')" 
+      <div class="show-product-samples" onclick="window.open('https://encrpc.github.io/Final_SubFabrics4/lattek/H_Lattek.html', '_blank')"><span onclick="window.open('https://encrpc.github.io/Final_SubFabrics4/lattek/H_Lattek.html', '_blank')" 
       style="display: inline-block; background: white; color: #333f48; border: 1px solid #333f48; padding: 8px 10px; font-size: 14px; font-weight:  ; border-radius: 8px; margin-left: 0px; cursor: pointer; transition: background 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out, transform 0.3s ease-in-out;"
       onmouseover="this.style.background='#333f48'; this.style.color='white'; this.style.borderColor='#333f48'; this.style.transform='scale(1)';" 
       onmouseout="this.style.background='white'; this.style.color='#333f48'; this.style.borderColor='#333f48'; this.style.transform='scale(1)';">
@@ -2862,7 +2995,7 @@ GSM -
              
 
 
-    <a href="https://encrpc.github.io/fabricSub3/Taffata/H_Taffata.html"target="_blank">          
+   
 
 
 
@@ -2870,7 +3003,7 @@ GSM -
 <img src="dt22.jpg" alt="Fabric Image" class="image-hover">
        </a> 
  <div class="fabric-title">V E T L O O K</div>
-</div>
+</div><br>
 <div class="fabric-info">
                 <ul>
                     <li>⚪ Best suited for sublimation  embellishment</li>
@@ -2878,15 +3011,14 @@ GSM -
                     <li>⚪ Soft, broken-in feel for all-day comfort</li>
                     <li>⚪ Amazing for shooter shirts & training tops</li>
                     <li></li>
-			<li> &nbsp;</li><br><br><br>
+			<li> &nbsp;</li><br><br>
 		
                 </ul>
             </div>
 
  <div class="details">
                 <p>FABRIC COLORS&nbsp;  &nbsp;
-<br><br> </p>
-
+<br>
 </div>
 
 
@@ -2897,7 +3029,7 @@ GSM -
 
  <!-- iiiiiiiii -->
 
-<br><br>
+<div style="height: 10px; "></div>
 
 
  <!-- iiiiiiiii -->
@@ -2920,7 +3052,7 @@ GSM -
             </div>
            <div class="details">
                 <p> OPACITY RATING <span style="font-size:12px; color:#2F3C48;">&nbsp;4/5 (Slightly less opaque)</span>  </p>
-                <p class="sub-text">Provides a breathable finish with a slight see-through effect in lighter shades.<br></p><br>
+                <p class="sub-text">Provides a breathable finish with a slight see-through effect in lighter shades.<br></p><div style="height: 5px; "></div>
                 <p> WEIGHT  </p>
                 <p class="sub-text">Mid-weight fabric that offers a blend of durability and breathability, perfect for everyday wear.</p>
 
@@ -2935,7 +3067,7 @@ GSM -
 
 
 
-<br>
+<div style="height: 5px; "></div>
                 <p> EMBELLISHMENT TYPES </p>
                 <div class="embellishment-labels">
                  <span class="embellishment-label">Sublimation</span>
@@ -3028,7 +3160,7 @@ GSM -
               
 
 
-    <a href="https://encrpc.github.io/fabricSub3/Taffata/H_Taffata.html"target="_blank">          
+   
 
 
 
@@ -3036,7 +3168,7 @@ GSM -
 <img src="dtm2.jpg" alt="Fabric Image" class="image-hover">
        </a> 
  <div class="fabric-title">1 6 0 5</div>
-</div>
+</div><br>
 <div class="fabric-info">
                 <ul>
                     <li>⚪ High-stretch performance fabric for superior flexibility and movement</li>
@@ -3044,14 +3176,14 @@ GSM -
                     <li>⚪ Soft, smooth texture with excellent shape retention</li>
                     <li>⚪ Ideal for activewear, leggings, and compression garments</li>
                     <li> </li>
-			<li> &nbsp;</li><br>
-		
+			<li> &nbsp;</li><li> &nbsp;</li><br>
+	
                 </ul>
             </div>
 
  <div class="details">
                 <p>FABRIC COLORS&nbsp;  &nbsp;
-<br><br> </p>
+<br>
 
 </div>
 
@@ -3063,7 +3195,7 @@ GSM -
 
  <!-- iiiiiiiii -->
 
-<br><br>
+<div style="height: 10px; "></div>
 
 
  <!-- iiiiiiiii -->
@@ -3086,7 +3218,7 @@ GSM -
             </div>
            <div class="details">
                 <p> OPACITY RATING <span style="font-size:12px; color:#2F3C48;">&nbsp;5/5 (Very opaque)</span>  </p>
-                <p class="sub-text">Dense, full-coverage fabric ensuring no transparency, even with stretch.<br></p><br>
+                <p class="sub-text">Dense, full-coverage fabric ensuring no transparency, even with stretch.<br><br></p><div style="height: 5px; "></div>
                 <p> WEIGHT  </p>
                 <p class="sub-text">Comfortable, Heavyweight, supportive fabric providing structure, flexibility, and comfort.</p>
 
@@ -3100,7 +3232,7 @@ GSM -
 
 
 
-<br>
+<div style="height: 5px; "></div>
                 <p> EMBELLISHMENT TYPES </p>
                 <div class="embellishment-labels">
                  <span class="embellishment-label">Sublimation</span>
@@ -3171,7 +3303,7 @@ GSM -
            
 
 
-    <a href="https://encrpc.github.io/fabricSub3/Taffata/H_Taffata.html"target="_blank">          
+    <a href="https://encrpc.github.io/Final_SubFabrics/CATALINA/H_Catalina.html"target="_blank">          
 
 
 
@@ -3179,7 +3311,7 @@ GSM -
 <img src="Catalina2.jpg" alt="Fabric Image" class="image-hover">
        </a> 
  <div class="fabric-title">C A T A L I N A</div>
-</div>
+</div><br>
 <div class="fabric-info">
                 <ul>
                     <li>⚪ High-performance stretch fabric with superior flexibility</li>
@@ -3194,7 +3326,7 @@ GSM -
 
  <div class="details">
                 <p>FABRIC COLORS&nbsp;  &nbsp;
-<br><br> </p>
+<br>
 
 </div>
 
@@ -3205,8 +3337,7 @@ GSM -
 
 
  <!-- iiiiiiiii -->
-
-<br><br>
+<div style="height: 10px; "></div>
 
 
  <!-- iiiiiiiii -->
@@ -3229,9 +3360,9 @@ GSM -
             </div>
            <div class="details">
                 <p> OPACITY RATING <span style="font-size:12px; color:#2F3C48;">&nbsp;4/5 (Slightly less opaque)</span>  </p>
-                <p class="sub-text">Provides a breathable finish with a slight see-through effect in lighter shades.<br></p><br>
+                <p class="sub-text">Provides a breathable finish with a slight see-through effect in lighter shades.<br></p><div style="height: 5px; "></div>
                 <p> WEIGHT  </p>
-                <p class="sub-text">Comfortable, mid-weight fabric, perfect for athletic wear and lifestyle items..</p>
+                <p class="sub-text">Comfortable, mid-weight fabric, perfect for lifestyle items.</p>
 
  <p class="sub-text">
 280
@@ -3240,10 +3371,10 @@ GSM -
 88%POLY 12%SP SJ</p>
 
 
-
-
-
 <br>
+
+
+<div style="height: 5px; "></div>
                 <p> EMBELLISHMENT TYPES </p>
                 <div class="embellishment-labels">
                  <span class="embellishment-label">Sublimation</span>
@@ -3258,8 +3389,7 @@ GSM -
 
 <!-- 0000000000000000000 -->
 
-      <div class="show-product-samples" onclick="return false('q', '_blank')"><span onclick="return false('q', '_blank')" 
-      style="display: inline-block; background: white; color: #333f48; border: 1px solid #333f48; padding: 8px 10px; font-size: 14px; font-weight:  ; border-radius: 8px; margin-left: 0px; cursor: pointer; transition: background 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out, transform 0.3s ease-in-out;"
+      <div class="show-product-samples" onclick="window.open('https://encrpc.github.io/Final_SubFabrics/CATALINA/H_Catalina.html', '_blank')"><span onclick="window.open('https://encrpc.github.io/Final_SubFabrics/CATALINA/H_Catalina.html', '_blank')"  style="display: inline-block; background: white; color: #333f48; border: 1px solid #333f48; padding: 8px 10px; font-size: 14px; font-weight:  ; border-radius: 8px; margin-left: 0px; cursor: pointer; transition: background 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out, transform 0.3s ease-in-out;"
       onmouseover="this.style.background='#333f48'; this.style.color='white'; this.style.borderColor='#333f48'; this.style.transform='scale(1)';" 
       onmouseout="this.style.background='white'; this.style.color='#333f48'; this.style.borderColor='#333f48'; this.style.transform='scale(1)';">
      View Product Samples
@@ -3314,7 +3444,7 @@ GSM -
             
 
 
-    <a href="https://encrpc.github.io/fabricSub3/Taffata/H_Taffata.html"target="_blank">          
+    <a href="https://encrpc.github.io/Final_SubFabrics6/Taffata/H_Taffata.html"target="_blank">          
 
 
 
@@ -3322,7 +3452,7 @@ GSM -
 <img src="taffata2.jpg" alt="Fabric Image" class="image-hover">
        </a> 
  <div class="fabric-title">T A F F A T A</div>
-</div>
+</div><br>
 <div class="fabric-info">
                 <ul>
                     <li>⚪ Crisp, smooth, and lightweight fabric</li>
@@ -3337,7 +3467,7 @@ GSM -
 
  <div class="details">
                 <p>FABRIC COLORS&nbsp;  &nbsp;
-<br><br> </p>
+<br>
 
 </div>
 
@@ -3349,7 +3479,7 @@ GSM -
 
  <!-- iiiiiiiii -->
 
-<br><br>
+<div style="height: 10px; "></div>
 
 
  <!-- iiiiiiiii -->
@@ -3372,7 +3502,7 @@ GSM -
             </div>
            <div class="details">
                 <p> OPACITY RATING <span style="font-size:12px; color:#2F3C48;">&nbsp;3/5 (Moderately opaque)</span>  </p>
-                <p class="sub-text"> Perfect for layering or outerwear applications.<br></p><br>
+                <p class="sub-text"> Perfect for layering or outerwear applications.<br><br></p><div style="height: 5px; "></div>
                 <p> WEIGHT  </p>
                 <p class="sub-text">Ultra-lightweight fabric with a sleek, slightly stiff feel.</p>
 
@@ -3384,9 +3514,9 @@ GSM -
 
 
 
-
-
 <br>
+
+<div style="height: 5px; "></div>
                 <p> EMBELLISHMENT TYPES </p>
                 <div class="embellishment-labels">
                  <span class="embellishment-label">Sublimation</span>
@@ -3398,11 +3528,10 @@ GSM -
                 </div>
             </div>
      
-
+<br>
 <!-- 0000000000000000000 -->
 
-      <div class="show-product-samples" onclick="return false('q', '_blank')"><span onclick="return false('q', '_blank')" 
-      style="display: inline-block; background: white; color: #333f48; border: 1px solid #333f48; padding: 8px 10px; font-size: 14px; font-weight:  ; border-radius: 8px; margin-left: 0px; cursor: pointer; transition: background 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out, transform 0.3s ease-in-out;"
+    <div class="show-product-samples" onclick="window.open('https://encrpc.github.io/Final_SubFabrics6/Taffata/H_Taffata.html', '_blank')"><span onclick="window.open('https://encrpc.github.io/Final_SubFabrics6/Taffata/H_Taffata.html', '_blank')"   style="display: inline-block; background: white; color: #333f48; border: 1px solid #333f48; padding: 8px 10px; font-size: 14px; font-weight:  ; border-radius: 8px; margin-left: 0px; cursor: pointer; transition: background 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out, transform 0.3s ease-in-out;"
       onmouseover="this.style.background='#333f48'; this.style.color='white'; this.style.borderColor='#333f48'; this.style.transform='scale(1)';" 
       onmouseout="this.style.background='white'; this.style.color='#333f48'; this.style.borderColor='#333f48'; this.style.transform='scale(1)';">
      View Product Samples
@@ -3457,7 +3586,7 @@ GSM -
              
 
 
-    <a href="https://encrpc.github.io/fabricSub3/Taffata/H_Taffata.html"target="_blank">          
+    <a href="https://encrpc.github.io/Final_SubFabrics7/WAFFLEKNIT/H_WaffleKnit.html"target="_blank">          
 
 
 
@@ -3465,7 +3594,7 @@ GSM -
 <img src="wakint2.jpg" alt="Fabric Image" class="image-hover">
        </a> 
  <div class="fabric-title">W A F F L E&nbsp; K N I T</div>
-</div>
+</div><br>
 <div class="fabric-info">
                 <ul>
                     <li>⚪ Unique textured waffle knit for enhanced insulation and breathability</li>
@@ -3480,7 +3609,7 @@ GSM -
 
  <div class="details">
                 <p>FABRIC COLORS&nbsp;  &nbsp;
-<br><br> </p>
+<br>
 
 </div>
 
@@ -3492,12 +3621,12 @@ GSM -
 
  <!-- iiiiiiiii -->
 
-<br><br>
+<div style="height: 10px; "></div>
 
 
  <!-- iiiiiiiii -->
 
-<span onclick="return false(' ', '_blank')" 
+<span onclick="openPopup('popup9')" 
       style="display: inline-block; background: #333f48; color: white; ; padding: 8px 10px; font-size: 14px; font-weight:  ; border-radius: 8px; margin-left: 0px; cursor: pointer; transition: background 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out, transform 0.3s ease-in-out;"
       onmouseover="this.style.background='white'; this.style.color='#333f48'; this.style.borderColor='#333f48'; this.style.transform='scale(1.02)';" 
 
@@ -3515,7 +3644,7 @@ GSM -
             </div>
            <div class="details">
                 <p> OPACITY RATING <span style="font-size:12px; color:#2F3C48;">&nbsp;4/5 (Slightly less opaque)</span>  </p>
-                <p class="sub-text">Offers moderate coverage with a breathable structure, allowing some airflow in lighter shades.<br></p><br>
+                <p class="sub-text">Offers moderate coverage with a breathable structure, allowing some airflow in lighter shades.<br></p><div style="height: 5px; "></div>
                 <p> WEIGHT  </p>
                 <p class="sub-text">Lightweight to mid-weight fabric, providing a balance of warmth, comfort, and flexibility.</p>
 
@@ -3529,7 +3658,7 @@ GSM -
 
 
 
-<br>
+<div style="height: 5px; "></div>
                 <p> EMBELLISHMENT TYPES </p>
                 <div class="embellishment-labels">
                  <span class="embellishment-label">Sublimation</span>
@@ -3544,8 +3673,7 @@ GSM -
 
 <!-- 0000000000000000000 -->
 
-      <div class="show-product-samples" onclick="return false('q', '_blank')"><span onclick="return false('q', '_blank')" 
-      style="display: inline-block; background: white; color: #333f48; border: 1px solid #333f48; padding: 8px 10px; font-size: 14px; font-weight:  ; border-radius: 8px; margin-left: 0px; cursor: pointer; transition: background 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out, transform 0.3s ease-in-out;"
+     <div class="show-product-samples" onclick="window.open('https://encrpc.github.io/Final_SubFabrics7/WAFFLEKNIT/H_WaffleKnit.html', '_blank')"><span onclick="window.open('https://encrpc.github.io/Final_SubFabrics7/WAFFLEKNIT/H_WaffleKnit.html', '_blank')"  style="display: inline-block; background: white; color: #333f48; border: 1px solid #333f48; padding: 8px 10px; font-size: 14px; font-weight:  ; border-radius: 8px; margin-left: 0px; cursor: pointer; transition: background 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out, transform 0.3s ease-in-out;"
       onmouseover="this.style.background='#333f48'; this.style.color='white'; this.style.borderColor='#333f48'; this.style.transform='scale(1)';" 
       onmouseout="this.style.background='white'; this.style.color='#333f48'; this.style.borderColor='#333f48'; this.style.transform='scale(1)';">
      View Product Samples
@@ -3606,7 +3734,7 @@ GSM -
             
 
 
-    <a href="https://encrpc.github.io/fabricSub3/Taffata/H_Taffata.html"target="_blank">          
+    <a href="https://encrpc.github.io/Final_SubFabrics7/WAFFLE%20%20JACK/H_WaffleJack.html"target="_blank">          
 
 
 
@@ -3614,7 +3742,7 @@ GSM -
 <img src="wjack2.jpg" alt="Fabric Image" class="image-hover">
        </a> 
  <div class="fabric-title">W A F F L E&nbsp; J A C K</div>
-</div>
+</div><br>
 <div class="fabric-info">
                 <ul>
                     <li>⚪ Unique textured waffle knit for enhanced insulation and breathability</li>
@@ -3629,7 +3757,7 @@ GSM -
 
  <div class="details">
                 <p>FABRIC COLORS&nbsp;  &nbsp;
-<br><br> </p>
+<br>
 
 </div>
 
@@ -3641,12 +3769,12 @@ GSM -
 
  <!-- iiiiiiiii -->
 
-<br><br>
+ <div style="height: 10px; "></div>
 
 
  <!-- iiiiiiiii -->
 
-<span onclick="return false(' ', '_blank')" 
+<span onclick="openPopup('popup10')" 
       style="display: inline-block; background: #333f48; color: white; ; padding: 8px 10px; font-size: 14px; font-weight:  ; border-radius: 8px; margin-left: 0px; cursor: pointer; transition: background 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out, transform 0.3s ease-in-out;"
       onmouseover="this.style.background='white'; this.style.color='#333f48'; this.style.borderColor='#333f48'; this.style.transform='scale(1.02)';" 
 
@@ -3664,7 +3792,7 @@ GSM -
             </div>
            <div class="details">
                 <p> OPACITY RATING <span style="font-size:12px; color:#2F3C48;">&nbsp;4/5 (Slightly less opaque)</span>  </p>
-                <p class="sub-text">Offers moderate coverage with a breathable structure, allowing some airflow in lighter shades.<br></p><br>
+                <p class="sub-text">Offers moderate coverage with a breathable structure, allowing some airflow in lighter shades.<br></p><div style="height: 5px; "></div>
                 <p> WEIGHT  </p>
                 <p class="sub-text">Lightweight to mid-weight fabric, providing a balance of warmth, comfort, and flexibility.</p>
 
@@ -3678,7 +3806,7 @@ GSM -
 
 
 
-<br>
+<div style="height: 5px; "></div>
                 <p> EMBELLISHMENT TYPES </p>
                 <div class="embellishment-labels">
                  <span class="embellishment-label">Sublimation</span>
@@ -3692,9 +3820,7 @@ GSM -
      
 
 <!-- 0000000000000000000 -->
-
-      <div class="show-product-samples" onclick="return false('q', '_blank')"><span onclick="return false('q', '_blank')" 
-      style="display: inline-block; background: white; color: #333f48; border: 1px solid #333f48; padding: 8px 10px; font-size: 14px; font-weight:  ; border-radius: 8px; margin-left: 0px; cursor: pointer; transition: background 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out, transform 0.3s ease-in-out;"
+<div class="show-product-samples" onclick="window.open('https://encrpc.github.io/Final_SubFabrics7/WAFFLE%20%20JACK/H_WaffleJack.html', '_blank')"><span onclick="window.open('https://encrpc.github.io/Final_SubFabrics7/WAFFLE%20%20JACK/H_WaffleJack.html', '_blank')"   style="display: inline-block; background: white; color: #333f48; border: 1px solid #333f48; padding: 8px 10px; font-size: 14px; font-weight:  ; border-radius: 8px; margin-left: 0px; cursor: pointer; transition: background 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out, transform 0.3s ease-in-out;"
       onmouseover="this.style.background='#333f48'; this.style.color='white'; this.style.borderColor='#333f48'; this.style.transform='scale(1)';" 
       onmouseout="this.style.background='white'; this.style.color='#333f48'; this.style.borderColor='#333f48'; this.style.transform='scale(1)';">
      View Product Samples
@@ -3714,27 +3840,177 @@ GSM -
 
 
 
+  <!-- Popup SS-->
+
+
+  <!-- W A R P T E K -->
+    <div id="popup1" class="popup-overlay">
+        <div class="popup-content">
+            <div class="popup-header">
+                <span>Stock Colors - W A R P T E K &nbsp; Fabric </span>
+            </div>
+            <div class="iframe-container">
+                <iframe src="https://encrpc.github.io/Final_Colors/ft/Warptek.html" allowfullscreen></iframe>
+                <div class="close-btn" onclick="closePopup('popup1')">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+  <!-- B A M B O O -->
+    <div id="popup2" class="popup-overlay">
+        <div class="popup-content">
+            <div class="popup-header">
+                <span>Stock Colors - B A M B O O &nbsp; Fabric
+</span>
+            </div>
+            <div class="iframe-container">
+                <iframe src="https://encrpc.github.io/Final_Colors/ColorBamboo.html" allowfullscreen></iframe>
+                <div class="close-btn" onclick="closePopup('popup2')">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
 
 
 
+  <!-- F L E E C E -->
+    <div id="popup3" class="popup-overlay">
+        <div class="popup-content">
+            <div class="popup-header">
+                <span>Stock Colors - F L E E C E &nbsp; Fabric</span>
+            </div>
+            <div class="iframe-container">
+                <iframe src="https://encrpc.github.io/Final_Colors/ft/Fleece.html" allowfullscreen></iframe>
+                <div class="close-btn" onclick="closePopup('popup3')">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
+  <!-- F R E N C H   T E R R Y 1 -->
+    <div id="popup4" class="popup-overlay">
+        <div class="popup-content">
+            <div class="popup-header">
+                <span>Stock Colors - F R E N C H   T E R R Y &nbsp; Fabric</span>
+            </div>
+            <div class="iframe-container">
+                <iframe src="https://encrpc.github.io/Final_Colors/ft/FrenchTerry.html" allowfullscreen></iframe>
+                <div class="close-btn" onclick="closePopup('popup4')">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
+  <!-- R I P T E K 1 -->
+    <div id="popup5" class="popup-overlay">
+        <div class="popup-content">
+            <div class="popup-header">
+                <span>Stock Colors - R I P T E K &nbsp; Fabric </span>
+            </div>
+            <div class="iframe-container">
+                <iframe src="https://encrpc.github.io/Final_Colors/ft/Riptek.html" allowfullscreen></iframe>
+                <div class="close-btn" onclick="closePopup('popup5')">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
+  <!-- V E R S A T E K 1 -->
+    <div id="popup6" class="popup-overlay">
+        <div class="popup-content">
+            <div class="popup-header">
+                <span>Stock Colors - V E R S A T E K &nbsp; Fabric</span>
+            </div>
+            <div class="iframe-container">
+                <iframe src="https://encrpc.github.io/Final_Colors/versa.html" allowfullscreen></iframe>
+                <div class="close-btn" onclick="closePopup('popup6')">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
+  <!-- T E M P T E K 1 -->
+    <div id="popup7" class="popup-overlay">
+        <div class="popup-content">
+            <div class="popup-header">
+                <span>Stock Colors  - T E M P T E K &nbsp; Fabric</span>
+            </div>
+            <div class="iframe-container">
+                <iframe src="https://encrpc.github.io/Final_Colors/ColorTemptek.html" allowfullscreen></iframe>
+                <div class="close-btn" onclick="closePopup('popup7')">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
+  <!-- C O T T O N 1 -->
+    <div id="popup8" class="popup-overlay">
+        <div class="popup-content">
+            <div class="popup-header">
+                <span>Stock Colors - C O T T O N &nbsp; Fabric </span>
+            </div>
+            <div class="iframe-container">
+                <iframe src="https://encrpc.github.io/Final_Colors/ColorCotton.html" allowfullscreen></iframe>
+                <div class="close-btn" onclick="closePopup('popup8')">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
+  <!-- W A F F L E  K N I T 1 -->
+    <div id="popup9" class="popup-overlay">
+        <div class="popup-content">
+            <div class="popup-header">
+                <span>Stock Colors - W A F F L E &nbsp;  K N I T &nbsp; Fabric</span>
+            </div>
+            <div class="iframe-container">
+                <iframe src="https://encrpc.github.io/Final_Colors/wk.html" allowfullscreen></iframe>
+                <div class="close-btn" onclick="closePopup('popup9')">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
+  <!-- W A F F L E &nbsp;  J A C K 1 -->
+    <div id="popup10" class="popup-overlay">
+        <div class="popup-content">
+            <div class="popup-header">
+                <span>Stock Colors - W A F F L E  J A C K &nbsp; Fabric</span>
+            </div>
+            <div class="iframe-container">
+                <iframe src="https://encrpc.github.io/Final_Colors/wj.html" allowfullscreen></iframe>
+                <div class="close-btn" onclick="closePopup('popup10')">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+  <!-- Popup SS END-->
 
 
 
@@ -3775,6 +4051,82 @@ GSM -
             closeDialog();
         }
     };
+
+
+
+
+
+
+    // POPUPS
+
+function openPopup(popupId) {
+            document.getElementById(popupId).classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+        
+        function closePopup(popupId) {
+            document.getElementById(popupId).classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+        
+        // Close popup when clicking outside content
+        document.querySelectorAll('.popup-overlay').forEach(popup => {
+            popup.addEventListener('click', function(e) {
+                if (e.target === this) {
+                    this.classList.remove('active');
+                    document.body.style.overflow = 'auto';
+                }
+            });
+        });
+        
+        // Close popup with Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                document.querySelectorAll('.popup-overlay').forEach(popup => {
+                    popup.classList.remove('active');
+                    document.body.style.overflow = 'auto';
+                });
+            }
+        });
+
+
+
+
+
+
+
+
+    function openPopup(popupId) {
+            document.getElementById(popupId).classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+        
+        function closePopup(popupId) {
+            document.getElementById(popupId).classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+        
+        // Close popup when clicking outside content
+        document.querySelectorAll('.popup-overlay').forEach(popup => {
+            popup.addEventListener('click', function(e) {
+                if (e.target === this) {
+                    this.classList.remove('active');
+                    document.body.style.overflow = 'auto';
+                }
+            });
+        });
+        
+        // Close popup with Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                document.querySelectorAll('.popup-overlay').forEach(popup => {
+                    popup.classList.remove('active');
+                    document.body.style.overflow = 'auto';
+                });
+            }
+        });
+
+
 </script>
 
 
